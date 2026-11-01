@@ -1,0 +1,105 @@
+Signing in to GitHub…	正在登录 GitHub…
+Loading GitHub Copilot	正在加载 GitHub Copilot
+Notifications	通知
+Sidebar	侧边栏
+Quick links	快捷链接
+New	新建
+Pull requests	拉取请求
+Issues	议题
+Automations	自动化
+Customize	自定义
+Projects	项目
+No projects yet	暂无项目
+Sessions	会话
+No sessions yet	暂无会话
+To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel.	要拖动项目，请按空格键；拖动时用方向键移动；再按空格键放下，或按 Esc 取消。
+SCORE	得分
+Ask anything or paste a URL. Use / for commands, & sessions, # issues…	随便问，或粘贴链接。输入 / 使用命令，& 引用会话，# 引用议题…
+Ask anything or paste a URL. Use / for commands, & for sessions, # for issues…	随便问，或粘贴链接。输入 / 使用命令，& 引用会话，# 引用议题…
+Interactive	交互式
+Model and reasoning:	模型与推理：
+Default	默认
+Mode:	模式：
+Chat	聊天
+This computer	本机
+Get started with one of these project ideas.	从下面这些项目创意开始吧。
+Build a snake game with score tracking and increasing speed.	做一个记录得分、速度逐渐加快的贪吃蛇游戏。
+Build a snake game with score tracking and increasing speed. Creates a sample folder.	做一个记录得分、速度逐渐加快的贪吃蛇游戏。将创建一个示例文件夹。
+GitHub Copilot uses AI. Check for mistakes.	GitHub Copilot 由 AI 驱动，请核对结果。
+Set up voice dictation	设置语音听写
+A speech-to-text model is required to record. Download one from voice settings to get started.	录制需要语音转文字模型。请先在语音设置中下载模型。
+Open voice settings	打开语音设置
+Report a bug or suggest a feature	报告问题或建议功能
+This will be posted as a public GitHub issue.	内容将作为公开的 GitHub issue 发布。
+Cancel	取消
+Share feedback	分享反馈
+Resize sidebar	调整侧边栏宽度
+Configure sessions	配置会话
+New repository or session	新建仓库或会话
+User profile and settings	用户资料与设置
+Message	消息
+Add context & more	添加上下文及更多
+Send message	发送消息
+Repository: Chat	仓库：聊天
+Environment: This computer	环境：本机
+Typeahead menu	输入建议菜单
+What feedback would you like to share?	你想分享哪些反馈？
+Universe ’26	Universe ’26
+Explore the latest launches in GitHub Copilot.	了解 GitHub Copilot 的最新发布。
+See what’s new	查看新功能
+Dismiss	关闭
+Build a to-do web app with smooth animations.	做一个动画流畅的待办事项网页应用。
+Build a to-do web app with smooth animations. Creates a sample folder.	做一个动画流畅的待办事项网页应用。将创建一个示例文件夹。
+Build a weather app that shows live forecasts.	做一个显示实时天气的天气预报应用。
+Build a weather app that shows live forecasts. Creates a sample folder.	做一个显示实时天气的天气预报应用。将创建一个示例文件夹。
+Create a space exploration quiz with animated feedback.	做一个带动态反馈的太空探索问答。
+Create a space exploration quiz with animated feedback. Creates a sample folder.	做一个带动态反馈的太空探索问答。将创建一个示例文件夹。
+Skip to settings content	跳到设置内容
+General	通用
+Accounts	账户
+Themes	主题
+Accessibility	无障碍
+Voice dictation	语音听写
+Model providers	模型提供方
+Experimental	实验性
+Check for updates	检查更新
+Automatically check for updates	自动检查更新
+Check for new versions in the background. When off, you can still check manually at any time.	在后台检查新版本。关闭后仍可随时手动检查。
+On	开
+Off	关
+Storage location	存储位置
+Where repositories are stored.	仓库的存储位置。
+Change location…	更改位置…
+Current theme	当前主题
+Customize the app's color palette	自定义应用配色
+Change theme	更改主题
+Start on system start	登录时启动
+Automatically launch GitHub Copilot when you log in to your computer.	登录电脑时自动启动 GitHub Copilot。
+Show in menu bar	在菜单栏中显示
+Show the GitHub Copilot icon in the menu bar	在菜单栏显示 GitHub Copilot 图标
+Delete chats without confirmation	删除聊天无需确认
+Skip the confirmation dialog when deleting chats.	删除聊天时跳过确认对话框。
+Find in workspace position	工作区查找框位置
+Position of the find-in-workspace dialog when active.	工作区查找对话框激活时的位置。
+Top right	右上角
+Enable sound	启用声音
+Play a sound when a session needs attention.	会话需要关注时播放提示音。
+Session complete sound	会话完成提示音
+Sound when a session's task is complete.	会话任务完成时的提示音。
+Needs input sound	需要输入提示音
+Sound when a session needs your input.	会话需要你输入时的提示音。
+Volume	音量
+Adjust notification volume.	调整通知音量。
+Special appearance	特殊外观
+Use special looks for events and holidays.	在节日与活动期间使用特殊外观。
+Settings	设置
+Search settings…	搜索设置…
+Search settings	搜索设置
+Close dialog	关闭对话框
+Reset to default location	重置为默认位置
+Copy path	复制路径
+Show in Finder	在访达中显示
+Preview session complete sound	试听会话完成提示音
+Preview needs input sound	试听需要输入提示音
+Copilot Notification	Copilot 通知
+Copilot Success	Copilot 成功

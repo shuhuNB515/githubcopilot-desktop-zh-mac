@@ -1,0 +1,27 @@
+Search	搜索
+Back	后退
+Forward	前进
+model and reasoning	模型与推理
+menu bar	菜单栏
+Show the GitHub Copilot icon in the	在以下位置显示 GitHub Copilot 图标
+microphone privacy	麦克风隐私
+Comments	评论
+Fixed:	已修复：
+Add Find in Page (macOS and Windows), page zoom, and hard reload to the browser toolbar menu.	在浏览器工具栏菜单中添加页面查找（macOS 和 Windows）、页面缩放和强制重新加载。
+Enable Assisted mode, which approves requests an LLM safety check deems safe and prompts otherwise. When you turn off this experiment, existing Assisted sessions change to Ask every time (Off). Agent Merge sessions change to Approve all.	启用辅助模式：对通过 LLM 安全检查判定为安全的请求自动批准，其余则询问。关闭此实验后，已有的辅助会话将改为每次询问（关闭）。
+Set Assisted as the default for new local sessions once. You can choose another default afterward in Settings > Sessions > Tool permissions. Existing sessions are unchanged.	将辅助模式一次性设为新本机会话的默认模式。之后可在「设置 > 会话 > 工具权限」中选择其他默认值。已有会话不受影响。
+Let Auto route turns to supported on-device models. Takes effect for sessions you start after turning this on. Local models may not use the same safety filters as GitHub Copilot-provided models and may be more susceptible to malicious instructions, especially when actions are automatically approved.	允许「自动」将对话轮次路由到受支持的本机模型。对开启后新启动的会话生效。本地模型可能不会使用与 GitHub Copilot 提供的模型相同的安全过滤。
+GitHub Enterprise Server support is experimental. Not all features work yet. Please send feedback to help us improve support.	GitHub Enterprise Server 支持仍属实验性。并非所有功能都可用，欢迎反馈以帮助我们改进支持。
+Run app-managed sessions, including Agency sessions, on the native Rust runtime. JavaScript extensions keep their existing host. Requires a restart.	在原生 Rust 运行时上运行应用管理的会话（包括 Agency 会话）。JavaScript 扩展保留原有宿主。需要重启。
+Carry the embedded terminal's PTY traffic over the app's WebSocket instead of Tauri IPC. Restart the app after toggling.	通过应用的 WebSocket 而非 Tauri IPC 传输内嵌终端的 PTY 流量。切换后请重启应用。
+Show a preview card with the repository, opened date, title, state, author, and branches when hovering a pull request link in a conversation or a pull request button on the Overview tab.	在对话中悬停拉取请求链接，或在概览页悬停拉取请求按钮时，显示包含仓库、创建日期、标题、状态、作者和分支的预览卡片。
+Bring core GitHub views into the app so they can be deep-linked to and feel familiar to the web version.	将 GitHub 核心视图引入应用，使其可被深度链接，并接近网页版的体验。
+Add a board layout to My Work that groups the current view's issues and pull requests into Backlog, Active, Needs attention, and Done columns derived from their state and linked session activity.	为「我的工作」添加看板布局，根据状态和关联会话活动，将当前视图中的议题和拉取请求归入待办、进行中、需要关注和已完成列。
+Create dashboards with configurable widgets for issues, pull requests, repository activity, and automations. Arrange and resize widgets in columns, and refine supported filters with Copilot.	创建可配置小组件的仪表盘，涵盖议题、拉取请求、仓库活动和自动化。可在列中排列并调整小组件大小，并用 Copilot 细化受支持的筛选条件。
+Adds /impeccable, a frontend design and UI-craft skill by Paul Bakaus (impeccable.style), bundled under Apache-2.0. Its optional automation scripts need Node 18+ on your PATH; without Node the agent falls back to the design guidance alone.	添加 /impeccable——由 Paul Bakaus（impeccable.style）开发的前端设计与界面打磨技能，以 Apache-2.0 许可捆绑。其可选自动化脚本需要 PATH 中有 Node 18+。
+Open the full sessions table to browse, rename, archive, or delete sessions and free up disk space.	打开完整会话表格，浏览、重命名、归档或删除会话并释放磁盘空间。
+Choose when new local sessions ask before running tools. Use	选择新的本机会话在运行工具前何时询问。使用
+Append a short attribution line to the replies agent merge posts when it resolves review comments, noting they were made automatically by the GitHub Copilot app.	当 Agent merge 解决审查评论时，在其发布的回复后附加一行简短署名，说明该回复由 GitHub Copilot 应用自动生成。
+Include sessions created by the Copilot CLI in the sidebar. Choose how far back to surface them, or turn this off to hide CLI-created sessions entirely.	在侧边栏中包含由 Copilot CLI 创建的会话。可选择回溯多久，或关闭以完全隐藏 CLI 创建的会话。
+Automatically archive and delete sessions linked to merged pull requests after they've been inactive. Deleting a session also deletes its workflow runs and can't be undone.	自动归档并删除与已合并拉取请求关联、且长期无活动的会话。删除会话也会删除其工作流运行记录，且无法撤销。
+GitHub Enterprise Server support	GitHub Enterprise Server 支持

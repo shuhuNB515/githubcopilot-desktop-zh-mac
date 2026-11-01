@@ -1,0 +1,179 @@
+Connected accounts	已连接账户
+Repositories use the default account unless changed in repository settings.	除非在仓库设置中更改，否则仓库使用默认账户。
+Add account	添加账户
+Upgrade Copilot	升级 Copilot
+Upgrade your Copilot plan for higher usage limits, premium models, AI reviews and more.	升级 Copilot 套餐，获得更高用量上限、高级模型、AI 审查等。
+Upgrade plan	升级套餐
+Plan	套餐
+Copilot Student	Copilot 学生版
+AI credits	AI 额度
+(resets monthly)	（每月重置）
+AI credits are consumed based on model and token usage.	AI 额度按模型与 token 用量消耗。
+Learn more	了解更多
+Additional usage disabled	附加用量已禁用
+Enable additional usage	启用附加用量
+upgrade plan	升级套餐
+to continue after plan credits run out.	以便在套餐额度用尽后继续使用。
+Account actions	账户操作
+Learn more about plans	了解套餐详情
+Early-access features that may change or be removed. Help shape the product by trying them out and sharing feedback.	早期访问功能，可能变更或移除。欢迎试用并分享反馈，帮助我们打磨产品。
+Fix pull requests with instructions	按指令修复拉取请求
+Add a chevron to pull request fix buttons with a "Fix with instructions" option that prefills the composer instead of running immediately.	为拉取请求修复按钮添加下拉箭头，提供「按指令修复」选项，可将内容预填到编辑器而不是立即运行。
+Disable PR-based session renaming	禁用基于 PR 的会话重命名
+Stop the app from renaming existing sessions when a pull request is created or its title changes. Titles supplied by remote hosts such as copilotd still apply.	当创建拉取请求或其标题变化时，停止重命名已有会话。由 copilotd 等远程主机提供的标题仍然生效。
+Browser options	浏览器选项
+Pele diagrams	Pele 图表
+Render Mermaid diagrams with Pele in chat and file previews. Turn off to use the original renderer.	在聊天和文件预览中使用 Pele 渲染 Mermaid 图表。关闭后使用原始渲染器。
+New composer agent selection	新版编辑器智能体选择
+Custom agents are added from the + menu and shown as a removable chip. /agent commands and automation editors are unchanged.	自定义智能体从 + 菜单添加，并显示为可移除的标签。/agent 命令与自动化编辑器不受影响。
+Assisted approvals	辅助审批
+Assisted approvals by default	默认启用辅助审批
+Agents can manage Agent merge	智能体可管理 Agent merge
+Let agents read and change Agent merge for sessions they own, created, or coordinate.	允许智能体为其拥有、创建或协调的会话读取和修改 Agent merge。
+Computer Use	计算机操作
+Register the bundled Computer Use plugin so sessions can control local desktop apps.	注册内置的 Computer Use 插件，让会话可以控制本机桌面应用。
+Environments	环境
+Resume web sessions	恢复网页会话
+Press	按
+, then choose "Resume remote session".	，然后选择「恢复远程会话」。
+Remote control	远程控制
+Control local sessions from another device.	从其他设备控制本机会话。
+Models	模型
+Local model auto routing	本地模型自动路由
+Quiet marketplace notifications	静默市场通知
+Show marketplace catalog status in Customize instead of as notifications.	在「自定义」中显示市场目录状态，而不是作为通知弹出。
+Native Rust runtime wrapper	原生 Rust 运行时包装器
+Use bundled git	使用内置 git
+Use the git binary shipped with the app instead of the system-installed one. Falls back to your system git when off.	使用应用自带的 git 可执行文件，而不是系统安装的版本。关闭时回退到系统 git。
+WebSocket terminal transport	WebSocket 终端传输
+Companion device integration	伴侣设备集成
+Connect supported companion devices to navigate sessions, use voice input, and control integrations.	连接受支持的伴侣设备，用于浏览会话、语音输入和控制集成。
+Issues and pull requests	议题与拉取请求
+Pull request hover cards	拉取请求悬停卡片
+GitHub 2.0	GitHub 2.0
+Board view	看板视图
+Dashboards	仪表盘
+Other	其他
+Impeccable design skill	Impeccable 设计技能
+Rich composer	富文本编辑器
+Use the Lexical-based rich-text editor for prompts, PR and issue comments, and issue creation.	在提示、PR 与议题评论以及创建议题时使用基于 Lexical 的富文本编辑器。
+Customize resources from GitHub	从 GitHub 自定义资源
+Search for, add and manage MCP servers, Skills and plugins from GitHub in Customize.	在「自定义」中搜索、添加和管理来自 GitHub 的 MCP 服务器、技能与插件。
+Manage sessions	管理会话
+Verbosity	详细程度
+Choose how much detail sessions show in the conversation view.	选择会话在对话视图中显示的详细程度。
+Balanced	均衡
+No file-backed instructions were found.	未找到基于文件的指令。
+Instructions	指令
+Preferences that apply to every session across all repositories. Copilot may also load instructions from files on this machine.	适用于所有仓库中每个会话的偏好设置。Copilot 也可能从本机文件加载指令。
+App instructions	应用指令
+Editable instructions stored by this app and added to new sessions.	由本应用保存并添加到新会话的可编辑指令。
+File-backed instructions	基于文件的指令
+These files are discovered by the Copilot runtime and applied when enabled. Edit the source file to change them.	这些文件由 Copilot 运行时发现，在启用后生效。修改内容请编辑源文件。
+Add 'Made with AI' label to generated images	为生成的图片添加「由 AI 制作」标识
+Applies to newly generated and edited images.	适用于新生成和编辑的图片。
+Tool permissions	工具权限
+for a session-specific override. Managed settings can restrict modes or set a different starting mode without changing this saved preference.	可对单个会话覆盖。受管理设置可以限制模式或设置不同的起始模式，而不会更改此已保存的偏好。
+Approve all	全部批准
+Agent merge reply attribution	Agent merge 回复署名
+Commit attribution	提交署名
+Include a	在 Copilot 撰写的提交信息中包含
+Co-authored-by	Co-authored-by
+trailer in commit messages written by Copilot.	尾注。
+Memory	记忆
+Let Copilot store and recall preferences and repository facts. Applies to new and resumed local sessions.	允许 Copilot 存储并回忆偏好设置和仓库事实。适用于新建和恢复的本机会话。
+New sessions remote access	新会话远程访问
+Choose the default remote access for new sessions.	选择新会话的默认远程访问方式。
+View only	仅查看
+Remote session history	远程会话历史
+Automatically add sessions updated within this window when an environment connects.	当环境连接时，自动添加在此时间窗口内更新过的会话。
+7 days	7 天
+Default branch prefix	默认分支前缀
+Prefix added to generated branch names. Use	添加到生成分支名称前的前缀。使用
+%username%	%username%
+for your GitHub login.	表示你的 GitHub 登录名。
+Preview:	预览：
+Worktree location	工作树位置
+Store new worktrees under the	将新的工作树存储在
+global storage location	全局存储位置
+Global storage	全局存储
+Example:	示例：
+Keep awake	保持唤醒
+Prevent sleep while a session is active. Keep awake for some additional time after a session goes idle.	会话活跃时防止休眠。会话空闲后仍保持唤醒一段时间。
+Keep awake while agent is running	智能体运行时保持唤醒
+Delete sessions without confirmation	删除会话无需确认
+Skip the confirmation dialog when deleting sessions.	删除会话时跳过确认对话框。
+Archive sessions without confirmation	归档会话无需确认
+Skip the confirmation dialog when archiving sessions.	归档会话时跳过确认对话框。
+Show Copilot CLI Session	显示 Copilot CLI 会话
+Session cleanup	会话清理
+Archive merged sessions	归档已合并会话
+Move inactive sessions to archive after their pull request has been merged.	拉取请求合并后，将无活动的会话移到归档。
+Disabled	已禁用
+Delete archived sessions	删除已归档会话
+Permanently delete archived sessions after this amount of time. This also deletes workflow runs.	在此时间后永久删除已归档会话。这也会删除工作流运行记录。
+e.g., Prefer functional patterns. Write concise commit messages. Always add tests for new code.	例如：优先使用函数式写法。编写简洁的提交信息。为新代码补充测试。
+Custom instructions for Copilot	Copilot 自定义指令
+No prefix	无前缀
+Mode	模式
+Choose a light or dark appearance and a color variant.	选择浅色或深色外观以及配色方案。
+Light	浅色
+Dark	深色
+Terminal	终端
+Customize the terminal's appearance independently from the app.	独立于应用自定义终端外观。
+Font	字体
+Set the font used for embedded terminals.	设置内嵌终端使用的字体。
+WebGL rendering	WebGL 渲染
+Use your graphics card to draw the terminal. Turn it off if you see display problems.	使用显卡绘制终端。若出现显示问题请关闭。
+Palettes	调色板
+Pick a color palette for the app.	为应用选择调色板。
+Staff picks	编辑精选
+More palettes	更多调色板
+Search palettes	搜索调色板
+Sort and filter palettes	排序和筛选调色板
+Feeling lucky	随机试试
+Input device	输入设备
+Choose which microphone Voice dictation should use when recording.	选择语音听写在录制时使用的麦克风。
+Detecting input devices	正在检测输入设备
+System default	系统默认
+Microphone privacy	麦克风隐私
+Allow GitHub to access your microphone in System Settings.	在「系统设置」中允许 GitHub 访问麦克风。
+Open preferences	打开系统设置
+Test microphone	测试麦克风
+Record a short local sample to check whether Voice dictation can hear the selected input.	本地录制一小段，检查语音听写能否听到所选输入。
+Test mic	测试麦克风
+Shortcut	快捷键
+Keyboard shortcut to activate voice transcription.	启用语音转写的键盘快捷键。
+Push to talk	按住说话
+Hold the shortcut to record. Release to stop and transcribe.	按住快捷键录制，松开即停止并转写。
+Transcription models	转写模型
+Voice dictation uses a local model to transcribe your speech. Download a model to get started.	语音听写使用本地模型转写语音。请先下载模型。
+Download	下载
+Configured providers	已配置的提供方
+Access models from other providers with your own API keys. Keys stay private and go straight to the provider.	使用自己的 API 密钥访问其他提供方的模型。密钥保持私密并直接发送给提供方。
+Add provider	添加提供方
+GitHub Copilot	GitHub Copilot
+Testing connection, GitHub Copilot	正在测试连接，GitHub Copilot
+Grouping	分组
+Repository	仓库
+Ordering	排序
+Updated	已更新
+Show	显示
+Filters	筛选
+Status	状态
+Environment	环境
+Source	来源
+Reset filters	重置筛选
+Collapse all	全部折叠
+Mark all as read	全部标为已读
+Step-by-step collaboration	逐步协作
+Plan first, execute when ready	先制定计划，就绪后执行
+Autopilot	自动驾驶
+End-to-end execution without interruption	端到端连续执行，不中断
+Copilot Fusion	Copilot Fusion
+Model	模型
+Repository file or folder…	仓库文件或文件夹…
+Session…	会话…
+Files…	文件…
+Folder…	文件夹…
+Active	使用中

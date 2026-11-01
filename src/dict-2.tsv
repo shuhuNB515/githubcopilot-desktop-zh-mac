@@ -1,0 +1,136 @@
+Display	显示
+Adjust zoom, cursor behavior, and visual differentiation.	调整缩放、光标行为和视觉区分度。
+Zoom	缩放
+Scale the whole interface for larger text and controls.	整体缩放界面，以获得更大的文字和控件。
+Show pointer on hover	悬停时显示手型光标
+Use a pointer cursor over buttons and links.	在按钮和链接上使用手型光标。
+Show underlines	显示下划线
+Make links easier to distinguish from surrounding text.	让链接更容易与正文区分。
+Increase contrast	提高对比度
+Follow operating system by default, or choose whether switches use stronger off-state borders in this app.	默认跟随系统，也可选择本应用的开关是否使用更强的关闭态边框。
+System	系统
+Differentiate without color	不依赖颜色的区分
+Follow operating system by default, or choose whether switches show On/Off labels and I/O symbols in this app.	默认跟随系统，也可选择本应用的开关是否显示开/关标签和 I/O 符号。
+Control which notifications appear and how long they are displayed.	控制显示哪些通知以及显示时长。
+Error duration	错误提示时长
+Problems that require immediate attention.	需要立即处理的问题。
+10 seconds	10 秒
+Announcement duration	公告时长
+Updates that don't require immediate attention.	不需要立即处理的更新。
+5 seconds	5 秒
+Show navigation hint	显示导航提示
+Display a tip about using F6 after multiple Tab key presses.	连续按多次 Tab 键后，显示使用 F6 的提示。
+Announcements	播报
+Control what content is announced by a screen reader.	控制屏幕阅读器播报的内容。
+Interaction hints	交互提示
+Announce keys to press for atypical interactions.	播报非常规交互需要按的键。
+Session activity announcements	会话活动播报
+Set what types of Copilot activity are announced.	设置播报哪些类型的 Copilot 活动。
+Reasoning	推理
+Reasoning announcements	推理播报
+Tool calls	工具调用
+Tool calls announcements	工具调用播报
+Code search	代码搜索
+Code search announcements	代码搜索播报
+Reading files	读取文件
+Reading files announcements	读取文件播报
+Creating files	创建文件
+Creating files announcements	创建文件播报
+Editing files	编辑文件
+Editing files announcements	编辑文件播报
+Running CLI commands	运行 CLI 命令
+Running CLI commands announcements	运行 CLI 命令播报
+CLI commands finish running	CLI 命令运行结束
+CLI commands finish running announcements	CLI 命令运行结束播报
+Changing models and agents	切换模型与智能体
+Changing models and agents announcements	切换模型与智能体播报
+Compacting the conversation	压缩对话
+Compacting the conversation announcements	压缩对话播报
+Keyboard	键盘
+Control whether the app responds to keyboard shortcuts.	控制应用是否响应键盘快捷键。
+Use keyboard shortcuts	使用键盘快捷键
+Enable or disable all keyboard shortcuts.	启用或禁用所有键盘快捷键。
+Cycle agent modes with	使用以下快捷键循环切换智能体模式
+Shift + Tab	⇧Tab
+Sets Copilot to Interactive, Plan, or Autopilot. Requires Use keyboard shortcuts enabled.	将 Copilot 设为交互式、计划或自动驾驶。需要先启用「使用键盘快捷键」。
+Keyboard shortcuts	键盘快捷键
+View and remap shortcuts for every command.	查看并重新映射所有命令的快捷键。
+Command palette	命令面板
+or	或
+Find in file	在文件中查找
+Find next match	查找下一个匹配
+Find previous match	查找上一个匹配
+Open settings	打开设置
+View keyboard shortcuts	查看键盘快捷键
+Go to session by number	按编号跳转到会话
+Next unread session	下一个未读会话
+Quote selection	引用选中内容
+Copy selection	复制选中内容
+Add widget	添加小组件
+Add repositories	添加仓库
+Save widget repositories	保存小组件仓库
+Navigation	导航
+action	操作
+without shortcut	无快捷键
+Go back	后退
+Go forward	前进
+Previous session	上一个会话
+Next session	下一个会话
+Previous region	上一个区域
+Next region	下一个区域
+Toggle sidebar	切换侧边栏
+Go to selection actions	转到选中内容操作
+Collapse or expand thinking	折叠或展开思考过程
+Expand tables	展开表格
+Assign…	分配…
+Previous artifact	上一个产物
+Next artifact	下一个产物
+Older version	更早版本
+Newer version	更新版本
+Toggle file edits panel	切换文件编辑面板
+Toggle panel	切换面板
+Toggle file tree	切换文件树
+Maximize or restore panel	最大化或还原面板
+Go to review changes	转到审查更改
+Go to pull request overview	转到拉取请求概览
+Open plan panel	打开计划面板
+Open or cycle terminal	打开或切换终端
+Collapse all diff files	折叠所有差异文件
+Sessions and projects	会话与项目
+Go to file	转到文件
+New session	新建会话
+New chat	新建聊天
+New project	新建项目
+Run or stop current session	运行或停止当前会话
+Search recent prompts	搜索最近的提示
+Open model and reasoning	打开模型与推理
+Show usage popover	显示用量浮层
+Cycle through composer modes	循环切换编辑器模式
+Decrease reasoning effort	降低推理强度
+Increase reasoning effort	提高推理强度
+Tabs	标签页
+New tab	新建标签页
+Switch to tab by number	按编号切换标签页
+Previous tab	上一个标签页
+Next tab	下一个标签页
+Close tab	关闭标签页
+Split right	向右拆分
+Split down	向下拆分
+Reopen last closed tab	重新打开上次关闭的标签页
+Browser	浏览器
+Toggle Pick & Polish	切换 Pick & Polish
+Capture screenshot	截取屏幕截图
+Open pull request review	打开拉取请求审查
+Comments	评论
+Submit comment	提交评论
+Attach selection to prompt	将选中内容附加到提示
+Attach selection to prompt with comment	将选中内容连同评论附加到提示
+Activate voice transcription	启用语音转写
+Conversation transcript	对话记录
+Adjust how conversation content behaves with screen readers.	调整对话内容在屏幕阅读器中的行为。
+Stabilize transcript for screen readers	为屏幕阅读器稳定对话记录
+Turn this on if your screen reader jumps to new content while a response streams. It keeps earlier messages stable and can use more memory in long conversations.	如果响应流式输出时屏幕阅读器跳到新内容，请开启此项。它会保持较早消息稳定，但在长对话中会占用更多内存。
+Search commands…	搜索命令…
+Search keyboard shortcuts	搜索键盘快捷键
+Filter shortcuts	筛选快捷键
+Edit voice dictation shortcut	编辑语音听写快捷键
