@@ -6,7 +6,7 @@ cd "$HERE"
 
 mkdir -p dist
 echo "→ 编译 CopilotCN.dylib"
-clang -dynamiclib -fobjc-arc -O2 -arch arm64 \
+clang -dynamiclib -fobjc-arc -O2 -arch arm64 -mmacosx-version-min=11.0 \
   -framework Foundation -framework AppKit -framework WebKit \
   -o dist/CopilotCN.dylib src/inject.m
 codesign --force --sign - dist/CopilotCN.dylib >/dev/null 2>&1 || true

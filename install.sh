@@ -32,8 +32,9 @@ if [ -f "$HERE/dist/CopilotCN.dylib" ]; then
 elif [ -f "$HERE/out/CopilotCN.dylib" ]; then
   cp "$HERE/out/CopilotCN.dylib" "$CN_HOME/.CopilotCN.dylib.new"
 else
-  clang -dynamiclib -fobjc-arc -O2 -arch arm64 -framework Foundation -framework AppKit \
-        -framework WebKit -o "$CN_HOME/.CopilotCN.dylib.new" "$HERE/src/inject.m"
+  clang -dynamiclib -fobjc-arc -O2 -arch arm64 -mmacosx-version-min=11.0 \
+        -framework Foundation -framework AppKit -framework WebKit \
+        -o "$CN_HOME/.CopilotCN.dylib.new" "$HERE/src/inject.m"
 fi
 codesign --force --sign - "$CN_HOME/.CopilotCN.dylib.new" >/dev/null 2>&1 || true
 mv -f "$CN_HOME/.CopilotCN.dylib.new" "$CN_HOME/CopilotCN.dylib"
