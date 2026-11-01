@@ -6,7 +6,7 @@
   var DICT = window.__CN_DICT || {};
   var CN_RE = /[\u3400-\u9fff\uff00-\uffef]/;
   var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, PRE: 1, CODE: 1, KBD: 1, SAMP: 1, TEXTAREA: 1, CANVAS: 1, SVG: 1 };
-  var ATTRS = ['title', 'placeholder', 'aria-label', 'aria-description', 'alt', 'aria-valuetext'];
+  var ATTRS = ['title', 'placeholder', 'aria-label', 'aria-description', 'aria-placeholder', 'data-placeholder', 'alt', 'aria-valuetext'];
   var stats = { text: 0, attr: 0 };
   var busy = false;
   var TEXT_ORIG = window.__CN_TEXT_ORIG || (window.__CN_TEXT_ORIG = new WeakMap());
@@ -180,6 +180,27 @@
     },
     function (s) {
       if (isCombo(s)) return combo(s);
+      return null;
+    },
+    function (s) {
+      var m = s.match(/^Models \((\d+)\)$/);
+      if (m) return '模型（' + m[1] + '）';
+      return null;
+    },
+    function (s) {
+      var m = s.match(/^Model provider status checked: (\d+) connected\.$/);
+      if (m) return '提供方状态检查：已连接 ' + m[1] + ' 个。';
+      return null;
+    },
+    function (s) {
+      var m = s.match(/^Connected, (.+)$/);
+      if (m) return '已连接，' + (trLabel(m[1]) || m[1]);
+      return null;
+    },
+    function (s) {
+      if (/^Edit shortcut for |^Edit voice dictation shortcut$/.test(s)) return null;
+      var m = s.match(/^Edit (.+)$/);
+      if (m) return '编辑「' + (trLabel(m[1]) || m[1]) + '」';
       return null;
     },
     function (s) { return splitLastComma(s); }
