@@ -1,8 +1,14 @@
 # githubcopilot-desktop-zh-mac
 
+[![build](https://github.com/shuhuNB515/githubcopilot-desktop-zh-mac/actions/workflows/build.yml/badge.svg)](https://github.com/shuhuNB515/githubcopilot-desktop-zh-mac/actions/workflows/build.yml)
+
 把 **GitHub Copilot 桌面端（macOS）** 的界面变成中文。
 
 > ⚠️ 仅支持 **macOS + Apple Silicon（arm64）**。本项目只做界面本地化，不修改官方安装包，也不分发 GitHub 的二进制。
+
+![主界面](docs/screenshot-main.png)
+
+<p align="center"><sub>实际运行截图：主界面（汉化后）</sub></p>
 
 ---
 
@@ -13,6 +19,12 @@
 - 词条 + 规则两层翻译：`新建会话 ⌘N，新建聊天 ⌘⇧N。`、`切换侧边栏 (⌘B)`、日期、百分比等动态文本自动处理
 - 词典可自行扩充（纯文本 TSV），改完热更新即可看到效果
 - 应用自动更新把签名还原后，启动器会自动重新签名再启动
+
+## 界面预览
+
+| 设置 · 通用 | 主界面 |
+| --- | --- |
+| ![设置](docs/screenshot-settings.png) | ![主界面](docs/screenshot-main.png) |
 
 ## 原理
 

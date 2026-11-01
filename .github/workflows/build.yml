@@ -1,0 +1,40 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 编译注入库（arm64）
+        run: ./build.sh
+
+      - name: 校验产物
+        run: |
+          file dist/CopilotCN.dylib
+          codesign -dv dist/CopilotCN.dylib 2>&1 | head -5
+
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: CopilotCN-dylib
+          path: dist/CopilotCN.dylib
+          if-no-files-found: error
+
+      - name: 发布 Release（推送 v* 标签时）
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/CopilotCN.dylib
+          generate_release_notes: true
