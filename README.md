@@ -155,6 +155,19 @@ export COPILOT_CN_DIR="$HOME/Library/Application Support/CopilotCN"
 
 使用前设置 `COPILOT_CN_DIR` 指向正在运行的实例数据目录；日志在 `copilot-cn.log`。
 
+## 构建与发布
+
+```bash
+./build.sh          # 产出 dist/CopilotCN.dylib（arm64，min macOS 11.0）
+./build.sh --dict   # 顺便从 src/dict-*.tsv 重建 runtime/dict.json
+```
+
+CI（`.github/workflows/build.yml`）会在 push / PR 时构建校验；推送 `v*` 标签时会自动构建并把 dylib 附到对应 Release。
+
+> ⚠️ 工作流跑在 **macOS runner** 上：即使是公有仓库，macOS 也会按 10 倍系数消耗账号的 Actions 分钟数。
+> 额度用尽时 GitHub 会把运行直接置为 `cancelled`（日志为空、不是代码问题）。此时本地 `./build.sh`
+> 构建后，在 Releases 页面手动上传 `dist/CopilotCN.dylib` 即可。
+
 ## 目录结构
 
 ```
