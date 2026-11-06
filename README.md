@@ -46,7 +46,7 @@ CopilotCN.dylib
         ▼
 WKWebView 页面
         └─ translator.js：遍历 DOM 文本节点与 aria-label/title/placeholder
-           ├─ 精确词条匹配（471 条）
+           ├─ 精确词条匹配（500+ 条）
            ├─ 规则：快捷键组合、日期、百分比、"X, Command + K"…
            └─ MutationObserver 跟随 React 重渲染
 ```
@@ -110,6 +110,19 @@ dyld 会直接 `SIGKILL` 掉带 `DYLD_INSERT_LIBRARIES` 的进程。
 "$HOME/Library/Application Support/CopilotCN/sign.sh"   # 只重签名
 ./install.sh                                            # 或完整重装
 ```
+
+## 更新日志
+
+### v1.0.1
+- 修复：Copilot 自动更新后中文版**打不开**（签名被还原 → dyld 直接杀掉进程）
+  - 启动器检测到签名失效会**自动重签**并弹出通知，不再"点了没反应"
+  - 重签前自动结束仍在占用文件的实例/子进程，失败自动重试一次（修掉 `Write permissions error`）
+  - 重签后校验注入权限，失败会弹出可操作的提示
+- 新增：模型提供方 / 自定义端点相关词条（Base URL、API Key、Wire API、Browse catalog 等），支持 `aria-placeholder`
+- 词条数 471 → 504
+
+### v1.0.0
+- 首个版本：主界面、设置、侧边栏、原生菜单栏中文化；一键安装脚本；CI 构建与 Release
 
 ## 自定义词典
 
