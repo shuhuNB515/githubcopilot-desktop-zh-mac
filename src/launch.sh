@@ -5,20 +5,31 @@ CN_HOME="$HOME/Library/Application Support/CopilotCN"
 APP="${COPILOT_CN_APP:-$HOME/Applications/GitHub Copilot.app}"
 DYLIB="$CN_HOME/CopilotCN.dylib"
 
+notify() {
+  /usr/bin/osascript -e "display notification \"$1\" with title \"GitHub Copilot 中文版\"" >/dev/null 2>&1 || true
+}
+alert() {
+  /usr/bin/osascript -e "display alert \"GitHub Copilot 中文版\" message \"$1\"" >/dev/null 2>&1 || true
+}
+
 if [ ! -x "$APP/Contents/MacOS/github" ]; then
-  osascript -e 'display alert "找不到已汉化的 GitHub Copilot" message "请先运行 install.sh"' >/dev/null 2>&1
-  echo "找不到 $APP，请先运行 install.sh" >&2
+  alert "找不到已汉化的应用副本，请重新运行 install.sh"
   exit 1
 fi
 if [ ! -f "$DYLIB" ]; then
-  echo "找不到注入库 $DYLIB，请先运行 install.sh" >&2
+  alert "找不到注入库，请重新运行 install.sh"
   exit 1
 fi
 
-# 应用被自动更新后会恢复官方签名，此时需要重新签名才能注入
+# 应用自动更新后会恢复官方签名，此时必须重新签名才能注入
 if ! codesign -d --entitlements :- "$APP" 2>/dev/null | grep -q disable-library-validation; then
-  echo "检测到应用签名已失效（可能刚更新过），正在重新签名……" >&2
-  "$CN_HOME/sign.sh" || exit 1
+  notify "应用刚更新过，正在重新签名，请稍候 1-2 分钟…"
+  echo "检测到应用签名已还原（通常刚自动更新过），正在重新签名……" >&2
+  if ! "$CN_HOME/sign.sh" >>"$CN_HOME/sign.log" 2>&1; then
+    alert "重新签名失败，请打开终端运行：~/Library/Application Support/CopilotCN/sign.sh"
+    exit 1
+  fi
+  notify "签名完成，正在启动"
 fi
 
 mkdir -p "$CN_HOME/dumps" "$CN_HOME/queue"

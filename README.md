@@ -98,11 +98,17 @@ open "$HOME/Applications/GitHub Copilot 中文版.app"
 
 ## 应用更新之后
 
-Copilot 自动更新会覆盖副本并恢复官方签名，注入随之失效（表现为打不开）。
-启动器内置自愈：检测到签名被还原时会自动重签后再启动，首次可能多等 1–2 分钟；也可以手动：
+Copilot 自动更新会覆盖副本并恢复官方签名，注入随之失效（表现为**双击没反应 / 图标一闪就退**）。
+
+原因：注入库需要 `com.apple.security.cs.disable-library-validation` 权限，官方签名没有这个权限，
+dyld 会直接 `SIGKILL` 掉带 `DYLD_INSERT_LIBRARIES` 的进程。
+
+处理：**用「GitHub Copilot 中文版」启动器重新打开即可**。启动器检测到签名被还原会自动重签
+（右下角会弹出通知，首次约 1–2 分钟），然后再启动。也可以在终端手动执行：
 
 ```bash
-./install.sh
+"$HOME/Library/Application Support/CopilotCN/sign.sh"   # 只重签名
+./install.sh                                            # 或完整重装
 ```
 
 ## 自定义词典
